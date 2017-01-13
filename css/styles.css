@@ -31,11 +31,14 @@ nav.main-nav {
       justify-content: space-between;
       padding-right: 10px;
       flex-wrap: wrap; }
-    nav.main-nav div.wrapper a, nav.main-nav div.wrapper a:hover {
+    nav.main-nav div.wrapper a {
       color: #F2E0BD;
       text-transform: uppercase;
       text-decoration: none;
+      padding: 20px;
       letter-spacing: 2px; }
+      nav.main-nav div.wrapper a:hover {
+        background-color: #7c7f66; }
     nav.main-nav div.wrapper #brand {
       font-size: 30px;
       padding: 4px 4px 4px 6px;
@@ -62,11 +65,14 @@ footer {
       justify-content: space-between;
       padding-right: 10px;
       flex-wrap: wrap; }
-    footer div.wrapper a, footer div.wrapper a:hover {
+    footer div.wrapper a {
       color: #F2E0BD;
       text-transform: uppercase;
       text-decoration: none;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      padding: 20px; }
+      footer div.wrapper a:hover {
+        background-color: #7c7f66; }
     footer div.wrapper #brand {
       font-size: 30px;
       padding: 4px 4px 4px 6px;

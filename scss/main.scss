@@ -1,0 +1,88 @@
+// nav, footer
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+html{
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+}
+nav.main-nav{
+    background-color: $darkGrey;
+    height: 100px;
+    margin: 0;
+        div.wrapper{
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            ul{
+                width: 80%;
+                list-style-type: none;
+                display: flex; 
+                justify-content: space-between;  
+                padding-right: 10px;    
+                flex-wrap: wrap;       
+            }
+        
+            a, a:hover{
+                color: $cream;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 2px;
+            }
+            #brand{
+                font-size: 30px;
+                padding: 4px 4px 4px 6px;
+                margin-left: 10px;
+                border: 1px solid $cream;
+                border-radius: 5px;
+                
+            }
+    }
+} // end #main-nav
+
+footer{
+    height: 100px;
+    background-color: $darkGrey;
+    width: 100%;
+            div.wrapper{
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                width: 80%;
+                list-style-type: none;
+                display: flex; 
+                justify-content: space-between;  
+                padding-right: 10px;    
+                flex-wrap: wrap;       
+            }
+        
+            a, a:hover{
+                color: $cream;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 2px;
+            }
+            #brand{
+                font-size: 30px;
+                padding: 4px 4px 4px 6px;
+                margin-left: 10px;
+                border: 1px solid $cream;
+                border-radius: 5px;
+                
+            }
+        }
+
+}

@@ -1,5 +1,6 @@
 /* VARIABLES */
 /* colors */
+/**/
 /* fonts */
 body {
   margin: 0;
@@ -118,13 +119,15 @@ div.listing {
     justify-content: space-between;
     flex-wrap: wrap; }
   div.listing fieldset {
-    width: 100px;
+    max-width: 100px;
+    flex: 1 1 100px;
     margin: 5px 0px 20px 0px;
     border-color: #FEEFDA;
     color: #FEEFDA; }
   div.listing legend {
     font-size: 1.5em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
     div.listing legend a, div.listing legend a:hover {
       text-decoration: none;
       color: #FEEFDA; }

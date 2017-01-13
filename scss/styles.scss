@@ -5,6 +5,7 @@
 
 @import 'variables.scss';
 @import 'main.scss';
+@import 'mixins';
 
 
 
@@ -25,7 +26,7 @@ header{
                     margin-left: 30px;
                     padding: 20px;
                     color: $darkGrey;
-                    text-align: center;
+                    text-align: left;
                     letter-spacing: 3px;
                     border-left: 1px solid $softBrown;
                 }
@@ -43,8 +44,9 @@ header{
                     list-style-type: none;
                 }
                 li{
-                   font-size: $mediumSize;
-                   font-weight: 600;
+                   font-size: 1.3em;
+                   letter-spacing: 3px;
+                   font-weight: 500;
                    padding-bottom: 20px;
                 }
         } // end lead-banner        
@@ -73,9 +75,13 @@ div.listing{
         font-size: $mediumSize;
         text-transform: uppercase;
         text-align: center;
-            a, a:hover{
+            a{
                 text-decoration: none;
                 color: $offWhite;
+                &:hover{
+                    color: $offWhite;
+                    font-size: 1.1em;
+                }
             }
     }
     div.text-banner{

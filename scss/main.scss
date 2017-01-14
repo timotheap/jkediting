@@ -1,9 +1,11 @@
 // nav, footer
 
 @import 'mixins';
+@import 'variables';
 
 body{
     margin: 0;
+    background-color: $redBrown;
    // font-family: 'Rubik', sans-serif;
    font-family: 'Merriweather', serif;
 }
@@ -35,15 +37,102 @@ nav.main-nav{
                 font-size: 30px;
                 padding: 4px 4px 4px 6px;
                 margin-left: 10px;
-                border: 1px solid $cream;
+                border: 1px solid $silver;
                 border-radius: 5px;                
             }
     }
 } // end #main-nav
 
+/* main content index.html */
+header{
+    background-color: $silver;
+    height: 500px;
+        section.lead-banner{
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+                div.lead-text{
+                    flex: 2 1 50%;
+                    max-width: 500px;
+                    margin-left: 30px;
+                    padding: 20px;
+                    color: $darkGrey;
+                    text-align: left;
+                    letter-spacing: 3px;
+                    border-left: 2px solid $redBrown;
+                }
+                h1{
+                    font-size: $largeSize;
+                }
+                h3{
+                    font-size: $mediumSize;
+                    letter-spacing: 5px;
+                }
+                aside{
+                    color: $redBrown;
+                }
+                ul{
+                    list-style-type: none;
+                }
+                li{
+                   font-size: 1.2em;
+                   letter-spacing: 3px;
+                   font-weight: 600;
+                   line-height: 1em;
+                   padding-bottom: 20px;
+                }
+        } // end lead-banner        
+} // end header
+
+/* first section after header */
+div.listing{
+    width: 100%;
+    background-color: $redBrown;
+    padding: 30px 0;
+    div.wrapper{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    fieldset{  
+        max-width: 100px; 
+        flex: 1 1 100px;  
+        margin: 5px 0px 20px 0px;
+        border-color: $silver;
+        color: $silver;
+    }
+    legend{
+        font-size: $mediumSize;
+        text-transform: uppercase;
+        text-align: center;
+            a{
+                text-decoration: none;
+                color: $silver;
+                &:hover{
+                    color: $silver;
+                    font-size: 1.1em;
+                }
+            }
+    }
+    div.text-banner{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        color: $silver;
+        padding-top: 10px;
+    }
+} // end section listing;
+
+/* footer */
 footer{
     height: 80px;
-    background-color: $darkGrey;
+    background-color: darken($darkGrey, 10);
     width: 100%;
             div.wrapper{
             @include wrapper;
@@ -77,7 +166,7 @@ footer{
         }
         #copy{
             color: $softBrown;
-            background-color: $darkGrey;
+            background-color: darken($darkGrey,10);
             text-align: center;
             letter-spacing: 4px;
             font-size: 12px;
